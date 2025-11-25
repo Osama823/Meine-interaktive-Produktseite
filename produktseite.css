@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
+.container {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.header1{
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+header {
+    display: flex; /*ليصيروا العناصر جنب بعض*/
+    justify-content: space-between ; /*هاد بيعمل مسافة بين العناصر/يعني بيفصلهن عن بعض /ز/*/
+    width: 100%;
+    margin: auto;
+    background-color: #676767;
+    align-items: center; /*حتى يصيروا العناصر جنب بعض*/
+    padding: 20px 0;
+}
+.Logo{
+    width: 40px;
+    margin-left: 70px;
+}
+header ul{
+    margin-right: 90px ;
+}
+ul li {
+    display: inline-block;
+    transition: all 0.4s ease;
+
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+}
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.content .text a{
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+.content .text .a{
+    transition: all 0.4s ease;
+}
+ul li:hover{
+    transform: scale(0.95);
+    color: #ffffff55;
+}
+.content .text .a:hover{
+    transform: scale(0.99);
+}
+.content .image{
+    width:30%;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /*لحتى وسط الصور على محور الايكسات*/
+}
+.icons img{
+    width: 40px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
