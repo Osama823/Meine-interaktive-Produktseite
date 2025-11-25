@@ -11,21 +11,14 @@
     min-height: 100vh;
     overflow: hidden;
     position: relative;
-}
-.header1{
-    text-align: center;
-    font-weight: bold;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    transition: all 0.5s ease;
 }
 header {
-    display: flex; /*ليصيروا العناصر جنب بعض*/
-    justify-content: space-between ; /*هاد بيعمل مسافة بين العناصر/يعني بيفصلهن عن بعض /ز/*/
+    display: flex; 
+    justify-content: space-between ; 
     width: 100%;
     margin: auto;
-    background-color: #676767;
-    align-items: center; /*حتى يصيروا العناصر جنب بعض*/
+    align-items: center;
     padding: 20px 0;
 }
 .Logo{
@@ -72,14 +65,13 @@ ul li a{
     padding: 8px 15px;
     font-weight: bold;
 }
-.content .text .a{
+.content .text .btn{
     transition: all 0.4s ease;
 }
 ul li:hover{
     transform: scale(0.95);
-    color: #ffffff55;
 }
-.content .text .a:hover{
+.content .text .btn:hover{
     transform: scale(0.99);
 }
 .content .image{
@@ -92,7 +84,7 @@ ul li:hover{
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /*لحتى وسط الصور على محور الايكسات*/
+    transform: translateX(-50%);
 }
 .icons img{
     width: 40px;
